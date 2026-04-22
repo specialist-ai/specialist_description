@@ -1,0 +1,375 @@
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+  <xacro:macro name="specialist_actuated" params="prefix parent *origin mesh_root:=package://specialist_description/robots/specialist_actuated/meshes">
+    <joint name="${prefix}base_mount" type="fixed">
+      <parent link="${parent}" />
+      <child link="${prefix}base" />
+      <xacro:insert_block name="origin" />
+    </joint>
+    <!-- Link base -->
+    <link name="${prefix}base">
+      <inertial>
+        <origin xyz="-0.0209002 -0.000168461 -0.0313659" rpy="0 0 0" />
+        <mass value="0.22472" />
+        <inertia ixx="0.000374857" ixy="2.19296e-07" ixz="2.91979e-05" iyy="0.000405574" iyz="-2.65185e-06" izz="0.000150682" />
+      </inertial>
+      <!-- Part hex_socket_head_cap_screw_m3x0_50_x_25 -->
+      <visual>
+        <origin xyz="-0.018 -0.0125 -0" rpy="0 0 3.14159" />
+        <geometry>
+          <mesh filename="${mesh_root}/hex_socket_head_cap_screw_m3x0_50_x_25.stl" />
+        </geometry>
+        <material name="hex_socket_head_cap_screw_m3x0_50_x_25_material">
+          <color rgba="0.603922 0.647059 0.686275 1" />
+        </material>
+      </visual>
+      <!-- Part base_bottom_actuated -->
+      <collision>
+        <origin xyz="-0.02484 -0 -0.02561" rpy="1.67412 -0.00261799 1.57062" />
+        <geometry>
+          <box size="0.05015 0.05902 0.07949" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="-0.01568 -0 -0.06833" rpy="3.14159 1.22173 0" />
+        <geometry>
+          <box size="0.055 0.056 0.07471" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="-0.03387 -0 0.00958" rpy="3.14159 0.349066 0" />
+        <geometry>
+          <box size="0.0415 0.056 0.119" />
+        </geometry>
+      </collision>
+      <visual>
+        <origin xyz="-0 -0 -0" rpy="0 -0 -1.5708" />
+        <geometry>
+          <mesh filename="${mesh_root}/base_bottom_actuated.stl" />
+        </geometry>
+        <material name="base_bottom_actuated_material">
+          <color rgba="0.2 0.2 0.2 1" />
+        </material>
+      </visual>
+      <!-- Part protector -->
+      <visual>
+        <origin xyz="0 -0 -0" rpy="0 -0 -1.5708" />
+        <geometry>
+          <mesh filename="${mesh_root}/protector.stl" />
+        </geometry>
+        <material name="protector_material">
+          <color rgba="0.2 0.2 0.2 1" />
+        </material>
+      </visual>
+      <!-- Part base_top_actuated -->
+      <visual>
+        <origin xyz="-0 -0 -0" rpy="0 -0 -1.5708" />
+        <geometry>
+          <mesh filename="${mesh_root}/base_top_actuated.stl" />
+        </geometry>
+        <material name="base_top_actuated_material">
+          <color rgba="0.2 0.2 0.2 1" />
+        </material>
+      </visual>
+      <!-- Part mount_simplified -->
+      <visual>
+        <origin xyz="0 0 0" rpy="-0 -0 -1.5708" />
+        <geometry>
+          <mesh filename="${mesh_root}/mount_simplified.stl" />
+        </geometry>
+        <material name="mount_simplified_material">
+          <color rgba="0.2 0.2 0.2 1" />
+        </material>
+      </visual>
+      <!-- Part hex_socket_head_cap_screw_m3x0_50_x_25_2 -->
+      <visual>
+        <origin xyz="-0.018 0.0125 -0" rpy="0 0 3.14159" />
+        <geometry>
+          <mesh filename="${mesh_root}/hex_socket_head_cap_screw_m3x0_50_x_25.stl" />
+        </geometry>
+        <material name="hex_socket_head_cap_screw_m3x0_50_x_25_2_material">
+          <color rgba="0.603922 0.647059 0.686275 1" />
+        </material>
+      </visual>
+      <!-- Part sts3215_metal_horn_active -->
+      <visual>
+        <origin xyz="0 0.013 -0.0294" rpy="1.5708 -0 1.5708" />
+        <geometry>
+          <mesh filename="${mesh_root}/sts3215_metal_horn_active.stl" />
+        </geometry>
+        <material name="sts3215_metal_horn_active_material">
+          <color rgba="0.960784 0.960784 0.964706 1" />
+        </material>
+      </visual>
+      <!-- Part sts3215_body -->
+      <visual>
+        <origin xyz="0 0.013 -0.0294" rpy="1.5708 -0 1.5708" />
+        <geometry>
+          <mesh filename="${mesh_root}/sts3215_body.stl" />
+        </geometry>
+        <material name="sts3215_body_material">
+          <color rgba="0.0980392 0.0980392 0.0980392 1" />
+        </material>
+      </visual>
+    </link>
+    <!-- Frame base_tag (dummy link + fixed joint) -->
+    <link name="${prefix}base_tag">
+      <origin xyz="0 0 0" rpy="0 -0 0" />
+      <inertial>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <mass value="1e-9" />
+        <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0" />
+      </inertial>
+    </link>
+    <joint name="${prefix}base_tag_frame" type="fixed">
+      <origin xyz="0 -0 -0" rpy="0 -0 0" />
+      <parent link="${prefix}base" />
+      <child link="${prefix}base_tag" />
+      <axis xyz="0 0 0" />
+    </joint>
+    <!-- Frame camera (dummy link + fixed joint) -->
+    <link name="${prefix}camera">
+      <origin xyz="0 0 0" rpy="0 -0 0" />
+      <inertial>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <mass value="1e-9" />
+        <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0" />
+      </inertial>
+    </link>
+    <joint name="${prefix}camera_frame" type="fixed">
+      <origin xyz="-0.025 -0 0.042" rpy="0 0.349066 0" />
+      <parent link="${prefix}base" />
+      <child link="${prefix}camera" />
+      <axis xyz="0 0 0" />
+    </joint>
+    <!-- Link left_finger -->
+    <link name="${prefix}left_finger">
+      <inertial>
+        <origin xyz="0.0354289 0.0143187 -0.00936935" rpy="0 0 0" />
+        <mass value="0.026" />
+        <inertia ixx="3.85528e-06" ixy="-8.7226e-08" ixz="1.53131e-06" iyy="2.17411e-05" iyz="-1.19881e-07" izz="2.21106e-05" />
+      </inertial>
+      <!-- Part left_tip -->
+      <visual>
+        <origin xyz="0 -0.0125 0.008" rpy="-0 -0 -1.5708" />
+        <geometry>
+          <mesh filename="${mesh_root}/left_tip.stl" />
+        </geometry>
+        <material name="left_tip_material">
+          <color rgba="0.952941 0.901961 0 1" />
+        </material>
+      </visual>
+      <collision>
+        <origin xyz="0 -0.0125 0.008" rpy="-0 -0 -1.5708" />
+        <geometry>
+          <mesh filename="${mesh_root}/left_tip.stl" />
+        </geometry>
+      </collision>
+      <!-- Part left_finger_actuated -->
+      <collision>
+        <origin xyz="0.00247 0.013575 -0.00489" rpy="-0 -0 -1.5708" />
+        <geometry>
+          <box size="0.04115 0.0262 0.00978" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0.04279 0.02102 -0.00489" rpy="-0 -0 -1.5708" />
+        <geometry>
+          <box size="0.02696 0.05442 0.00978" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0.04645 0.016 -0.0252" rpy="0.347495 -0 -1.5708" />
+        <geometry>
+          <box size="0.007 0.04042 0.015" />
+        </geometry>
+      </collision>
+      <visual>
+        <origin xyz="0 -0.0125 0.008" rpy="-0 -0 -1.5708" />
+        <geometry>
+          <mesh filename="${mesh_root}/left_finger_actuated.stl" />
+        </geometry>
+        <material name="left_finger_actuated_material">
+          <color rgba="0.2 0.2 0.2 1" />
+        </material>
+      </visual>
+      <!-- Part left_tip_grip_tape -->
+      <visual>
+        <origin xyz="0 -0.0125 0.008" rpy="-0 -0 -1.5708" />
+        <geometry>
+          <mesh filename="${mesh_root}/left_tip_grip_tape.stl" />
+        </geometry>
+        <material name="left_tip_grip_tape_material">
+          <color rgba="0 0 0 1" />
+        </material>
+      </visual>
+      <collision>
+        <origin xyz="0 -0.0125 0.008" rpy="-0 -0 -1.5708" />
+        <geometry>
+          <mesh filename="${mesh_root}/left_tip_grip_tape.stl" />
+        </geometry>
+      </collision>
+    </link>
+    <!-- Frame left_finger_tag (dummy link + fixed joint) -->
+    <link name="${prefix}left_finger_tag">
+      <origin xyz="0 0 0" rpy="0 -0 0" />
+      <inertial>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <mass value="1e-9" />
+        <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0" />
+      </inertial>
+    </link>
+    <joint name="${prefix}left_finger_tag_frame" type="fixed">
+      <origin xyz="0.04 0.0225 0" rpy="-0 0 0" />
+      <parent link="${prefix}left_finger" />
+      <child link="${prefix}left_finger_tag" />
+      <axis xyz="0 0 0" />
+    </joint>
+    <!-- Joint from base to left_finger -->
+    <joint name="${prefix}left_finger" type="revolute">
+      <origin xyz="0 0.0125 -0.00802" rpy="0 -0 -0" />
+      <parent link="${prefix}base" />
+      <child link="${prefix}left_finger" />
+      <axis xyz="0 0 1" />
+      <limit effort="3" velocity="4.71" lower="-0.261799" upper="0.698132" />
+      <mimic joint="${prefix}right_finger" multiplier="-1.0" />
+    </joint>
+    <!-- Link right_finger -->
+    <link name="${prefix}right_finger">
+      <inertial>
+        <origin xyz="0.0350247 -0.0140832 -0.00945693" rpy="0 0 0" />
+        <mass value="0.026" />
+        <inertia ixx="3.84516e-06" ixy="2.57569e-07" ixz="1.42518e-06" iyy="2.19822e-05" iyz="1.50414e-07" izz="2.2424e-05" />
+      </inertial>
+      <!-- Part right_tip -->
+      <visual>
+        <origin xyz="0 0.0125 0.008" rpy="0 -0 -1.5708" />
+        <geometry>
+          <mesh filename="${mesh_root}/right_tip.stl" />
+        </geometry>
+        <material name="right_tip_material">
+          <color rgba="0.952941 0.901961 0 1" />
+        </material>
+      </visual>
+      <collision>
+        <origin xyz="0 0.0125 0.008" rpy="0 -0 -1.5708" />
+        <geometry>
+          <mesh filename="${mesh_root}/right_tip.stl" />
+        </geometry>
+      </collision>
+      <!-- Part right_finger_actuated -->
+      <collision>
+        <origin xyz="0.00258 -0.01357 -0.00489" rpy="0 -0 -1.5708" />
+        <geometry>
+          <box size="0.04114 0.02616 0.00978" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0.04283 -0.02119 -0.00489" rpy="0 -0 -1.5708" />
+        <geometry>
+          <box size="0.02662 0.05434 0.00978" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0.04645 -0.016 -0.0252" rpy="0.347495 -0 -1.5708" />
+        <geometry>
+          <box size="0.007 0.04042 0.015" />
+        </geometry>
+      </collision>
+      <visual>
+        <origin xyz="0 0.0125 0.008" rpy="0 -0 -1.5708" />
+        <geometry>
+          <mesh filename="${mesh_root}/right_finger_actuated.stl" />
+        </geometry>
+        <material name="right_finger_actuated_material">
+          <color rgba="0.2 0.2 0.2 1" />
+        </material>
+      </visual>
+      <!-- Part right_tip_grip_tape -->
+      <visual>
+        <origin xyz="0 0.0125 0.008" rpy="0 -0 -1.5708" />
+        <geometry>
+          <mesh filename="${mesh_root}/right_tip_grip_tape.stl" />
+        </geometry>
+        <material name="right_tip_grip_tape_material">
+          <color rgba="0 0 0 1" />
+        </material>
+      </visual>
+      <collision>
+        <origin xyz="0 0.0125 0.008" rpy="0 -0 -1.5708" />
+        <geometry>
+          <mesh filename="${mesh_root}/right_tip_grip_tape.stl" />
+        </geometry>
+      </collision>
+    </link>
+    <!-- Frame right_finger_tag (dummy link + fixed joint) -->
+    <link name="${prefix}right_finger_tag">
+      <origin xyz="0 0 0" rpy="0 -0 0" />
+      <inertial>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <mass value="1e-9" />
+        <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0" />
+      </inertial>
+    </link>
+    <joint name="${prefix}right_finger_tag_frame" type="fixed">
+      <origin xyz="0.04 -0.0225 0" rpy="-0 -0 0" />
+      <parent link="${prefix}right_finger" />
+      <child link="${prefix}right_finger_tag" />
+      <axis xyz="0 0 0" />
+    </joint>
+    <!-- Joint from base to right_finger -->
+    <joint name="${prefix}right_finger" type="revolute">
+      <origin xyz="0 -0.0125 -0.008" rpy="0 -0 -0" />
+      <parent link="${prefix}base" />
+      <child link="${prefix}right_finger" />
+      <axis xyz="0 0 1" />
+      <limit effort="3" velocity="4.71" lower="-0.698132" upper="0.261799" />
+      <dynamics friction="0.02" />
+    </joint>
+    <!-- Link insta_360_x3 -->
+    <link name="${prefix}insta_360_x3">
+      <inertial>
+        <origin xyz="0.000525667 -0.000152311 0.0574106" rpy="0 0 0" />
+        <mass value="0.138" />
+        <inertia ixx="0.000168042" ixy="1.6424e-08" ixz="7.81268e-07" iyy="0.00015128" iyz="-2.03035e-07" izz="2.70181e-05" />
+      </inertial>
+      <!-- Part x3_screen -->
+      <visual>
+        <origin xyz="0 0 0" rpy="-0 -0 -1.5708" />
+        <geometry>
+          <mesh filename="${mesh_root}/x3_screen.stl" />
+        </geometry>
+        <material name="x3_screen_material">
+          <color rgba="0.0980392 0.0980392 0.0980392 1" />
+        </material>
+      </visual>
+      <!-- Part x3_lens -->
+      <visual>
+        <origin xyz="0 0 0" rpy="-0 -0 -1.5708" />
+        <geometry>
+          <mesh filename="${mesh_root}/x3_lens.stl" />
+        </geometry>
+        <material name="x3_lens_material">
+          <color rgba="0.0980392 0.0980392 0.0980392 1" />
+        </material>
+      </visual>
+      <!-- Part x3_body -->
+      <visual>
+        <origin xyz="0 0 0" rpy="-0 -0 -1.5708" />
+        <geometry>
+          <mesh filename="${mesh_root}/x3_body.stl" />
+        </geometry>
+        <material name="x3_body_material">
+          <color rgba="0.34902 0.34902 0.34902 1" />
+        </material>
+      </visual>
+    </link>
+    <!-- Joint from base to insta_360_x3 -->
+    <joint name="${prefix}camera" type="fixed">
+      <origin xyz="-0.0568079 -0 -0.0453914" rpy="-0 0.349066 0" />
+      <parent link="${prefix}base" />
+      <child link="${prefix}insta_360_x3" />
+      <axis xyz="0 0 1" />
+      <limit effort="3" velocity="4.71" />
+    </joint>
+  </xacro:macro>
+</robot>

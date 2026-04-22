@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>specialist_description</name>
+  <version>0.1.0</version>
+  <description>URDF, MJCF and xacro descriptions of the Specialist grippers</description>
+  <maintainer email="tk233.xyz@gmail.com">Specialist AI</maintainer>
+  <license>MIT</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>

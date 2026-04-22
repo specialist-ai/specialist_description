@@ -1,0 +1,91 @@
+<mujoco model="specialist_actuated">
+  <compiler angle="radian" />
+  <asset>
+    <mesh name="hex_socket_head_cap_screw_m3x0_50_x_25" content_type="model/stl" file="../meshes/hex_socket_head_cap_screw_m3x0_50_x_25.stl" />
+    <mesh name="base_bottom_actuated" content_type="model/stl" file="../meshes/base_bottom_actuated.stl" />
+    <mesh name="protector" content_type="model/stl" file="../meshes/protector.stl" />
+    <mesh name="base_top_actuated" content_type="model/stl" file="../meshes/base_top_actuated.stl" />
+    <mesh name="mount_simplified" content_type="model/stl" file="../meshes/mount_simplified.stl" />
+    <mesh name="sts3215_metal_horn_active" content_type="model/stl" file="../meshes/sts3215_metal_horn_active.stl" />
+    <mesh name="sts3215_body" content_type="model/stl" file="../meshes/sts3215_body.stl" />
+    <mesh name="left_tip" content_type="model/stl" file="../meshes/left_tip.stl" />
+    <mesh name="left_finger_actuated" content_type="model/stl" file="../meshes/left_finger_actuated.stl" />
+    <mesh name="left_tip_grip_tape" content_type="model/stl" file="../meshes/left_tip_grip_tape.stl" />
+    <mesh name="right_tip" content_type="model/stl" file="../meshes/right_tip.stl" />
+    <mesh name="right_finger_actuated" content_type="model/stl" file="../meshes/right_finger_actuated.stl" />
+    <mesh name="right_tip_grip_tape" content_type="model/stl" file="../meshes/right_tip_grip_tape.stl" />
+    <mesh name="x3_screen" content_type="model/stl" file="../meshes/x3_screen.stl" />
+    <mesh name="x3_lens" content_type="model/stl" file="../meshes/x3_lens.stl" />
+    <mesh name="x3_body" content_type="model/stl" file="../meshes/x3_body.stl" />
+  </asset>
+  <worldbody>
+    <body name="base">
+      <inertial pos="-0.0209002 -0.000168461 -0.0313659" quat="0.704333 -0.0487322 -0.0412813 0.706991" mass="0.22472" diaginertia="0.000405602 0.000378597 0.000146914" />
+      <geom name="hex_socket_head_cap_screw_m3x0_50_x_25_0" pos="-0.018 -0.0125 0" quat="1.32679e-06 0 0 1" type="mesh" contype="0" conaffinity="0" group="1" rgba="0.603922 0.647059 0.686275 1" density="0" mesh="hex_socket_head_cap_screw_m3x0_50_x_25" />
+      <geom name="base_collider_0" size="0.025075 0.02951 0.039745" pos="-0.02484 0 -0.02561" quat="0.472867 0.525818 0.524486 0.474159" type="box" contype="2" rgba="0.603922 0.647059 0.686275 1" />
+      <geom name="base_collider_1" size="0.0275 0.028 0.037355" pos="-0.01568 0 -0.06833" quat="1.08685e-06 0.819152 7.61018e-07 -0.573576" type="box" contype="2" rgba="0.603922 0.647059 0.686275 1" />
+      <geom name="base_collider_2" size="0.02075 0.028 0.0595" pos="-0.03387 0 0.00958" quat="1.30664e-06 0.984808 2.30396e-07 -0.173648" type="box" contype="2" rgba="0.603922 0.647059 0.686275 1" />
+      <geom name="base_bottom_actuated" quat="0.707105 0 0 -0.707108" type="mesh" contype="0" conaffinity="0" group="1" rgba="0.2 0.2 0.2 1" density="0" mesh="base_bottom_actuated" />
+      <geom name="protector" quat="0.707105 0 0 -0.707108" type="mesh" contype="0" conaffinity="0" group="1" rgba="0.2 0.2 0.2 1" density="0" mesh="protector" />
+      <geom name="base_top_actuated" quat="0.707105 0 0 -0.707108" type="mesh" contype="0" conaffinity="0" group="1" rgba="0.2 0.2 0.2 1" density="0" mesh="base_top_actuated" />
+      <geom name="mount_simplified" pos="0 0 0" quat="0.707105 0 0 -0.707108" type="mesh" contype="0" conaffinity="0" group="1" rgba="0.2 0.2 0.2 1" density="0" mesh="mount_simplified" />
+      <geom name="hex_socket_head_cap_screw_m3x0_50_x_25_1" pos="-0.018 0.0125 0" quat="1.32679e-06 0 0 1" type="mesh" contype="0" conaffinity="0" group="1" rgba="0.603922 0.647059 0.686275 1" density="0" mesh="hex_socket_head_cap_screw_m3x0_50_x_25" />
+      <geom name="sts3215_metal_horn_active" pos="0 0.013 -0.0294" quat="0.499998 0.5 0.500002 0.5" type="mesh" contype="0" conaffinity="0" group="1" rgba="0.960784 0.960784 0.964706 1" density="0" mesh="sts3215_metal_horn_active" />
+      <geom name="sts3215_body" pos="0 0.013 -0.0294" quat="0.499998 0.5 0.500002 0.5" type="mesh" contype="0" conaffinity="0" group="1" rgba="0.0980392 0.0980392 0.0980392 1" density="0" mesh="sts3215_body" />
+      <body name="base_tag">
+        <inertial pos="0 0 0" mass="1e-09" diaginertia="0 0 0" />
+      </body>
+      <body name="camera" pos="-0.025 0 0.042" quat="0.984808 0 0.173648 0">
+        <inertial pos="0 0 0" mass="1e-09" diaginertia="0 0 0" />
+      </body>
+      <body name="left_finger" pos="0 0.0125 -0.00802">
+        <inertial pos="0.0354289 0.0143187 -0.00936935" quat="-0.0812347 0.730918 -0.0851469 0.672242" mass="0.026" diaginertia="2.22686e-05 2.1711e-05 3.72739e-06" />
+        <joint name="left_finger" range="-0.261799 0.698132" actuatorfrcrange="-3 3" />
+        <geom name="left_tip_0" pos="0 -0.0125 0.008" quat="0.707105 0 0 -0.707108" type="mesh" contype="0" conaffinity="0" group="1" rgba="0.952941 0.901961 0 1" density="0" mesh="left_tip" />
+        <geom name="left_tip_1" pos="0 -0.0125 0.008" quat="0.707105 0 0 -0.707108" type="mesh" condim="4" rgba="0.952941 0.901961 0 1" mesh="left_tip" />
+        <geom name="left_finger_collider_0" size="0.020575 0.0131 0.00489" pos="0.00247 0.013575 -0.00489" quat="0.707105 0 0 -0.707108" type="box" contype="2" rgba="0.952941 0.901961 0 1" />
+        <geom name="left_finger_collider_1" size="0.01348 0.02721 0.00489" pos="0.04279 0.02102 -0.00489" quat="0.707105 0 0 -0.707108" type="box" contype="2" rgba="0.952941 0.901961 0 1" />
+        <geom name="left_finger_collider_2" size="0.0035 0.02021 0.0075" pos="0.04645 0.016 -0.0252" quat="0.696459 0.122241 -0.122241 -0.696462" type="box" contype="2" rgba="0.952941 0.901961 0 1" />
+        <geom name="left_finger_actuated" pos="0 -0.0125 0.008" quat="0.707105 0 0 -0.707108" type="mesh" contype="0" conaffinity="0" group="1" rgba="0.2 0.2 0.2 1" density="0" mesh="left_finger_actuated" />
+        <geom name="left_tip_grip_tape_0" pos="0 -0.0125 0.008" quat="0.707105 0 0 -0.707108" type="mesh" contype="0" conaffinity="0" group="1" rgba="0 0 0 1" density="0" mesh="left_tip_grip_tape" />
+        <geom name="left_tip_grip_tape_1" pos="0 -0.0125 0.008" quat="0.707105 0 0 -0.707108" type="mesh" condim="4" rgba="0 0 0 1" mesh="left_tip_grip_tape" />
+        <body name="left_finger_tag" pos="0.04 0.0225 0">
+          <inertial pos="0 0 0" mass="1e-09" diaginertia="0 0 0" />
+        </body>
+      </body>
+      <body name="right_finger" pos="0 -0.0125 -0.008">
+        <inertial pos="0.0350247 -0.0140832 -0.00945693" quat="0.0988572 0.72703 0.0968743 0.67251" mass="0.026" diaginertia="2.2581e-05 2.19372e-05 3.73317e-06" />
+        <joint name="right_finger" range="-0.698132 0.261799" actuatorfrcrange="-3 3" armature="0.023" frictionloss="0.02" />
+        <geom name="right_tip_0" pos="0 0.0125 0.008" quat="0.707105 0 0 -0.707108" type="mesh" contype="0" conaffinity="0" group="1" rgba="0.952941 0.901961 0 1" density="0" mesh="right_tip" />
+        <geom name="right_tip_1" pos="0 0.0125 0.008" quat="0.707105 0 0 -0.707108" type="mesh" condim="4" rgba="0.952941 0.901961 0 1" mesh="right_tip" />
+        <geom name="right_finger_collider_0" size="0.02057 0.01308 0.00489" pos="0.00258 -0.01357 -0.00489" quat="0.707105 0 0 -0.707108" type="box" contype="2" rgba="0.952941 0.901961 0 1" />
+        <geom name="right_finger_collider_1" size="0.01331 0.02717 0.00489" pos="0.04283 -0.02119 -0.00489" quat="0.707105 0 0 -0.707108" type="box" contype="2" rgba="0.952941 0.901961 0 1" />
+        <geom name="right_finger_collider_2" size="0.0035 0.02021 0.0075" pos="0.04645 -0.016 -0.0252" quat="0.696459 0.122241 -0.122241 -0.696462" type="box" contype="2" rgba="0.952941 0.901961 0 1" />
+        <geom name="right_finger_actuated" pos="0 0.0125 0.008" quat="0.707105 0 0 -0.707108" type="mesh" contype="0" conaffinity="0" group="1" rgba="0.2 0.2 0.2 1" density="0" mesh="right_finger_actuated" />
+        <geom name="right_tip_grip_tape_0" pos="0 0.0125 0.008" quat="0.707105 0 0 -0.707108" type="mesh" contype="0" conaffinity="0" group="1" rgba="0 0 0 1" density="0" mesh="right_tip_grip_tape" />
+        <geom name="right_tip_grip_tape_1" pos="0 0.0125 0.008" quat="0.707105 0 0 -0.707108" type="mesh" condim="4" rgba="0 0 0 1" mesh="right_tip_grip_tape" />
+        <body name="right_finger_tag" pos="0.04 -0.0225 0">
+          <inertial pos="0 0 0" mass="1e-09" diaginertia="0 0 0" />
+        </body>
+      </body>
+      <body name="insta_360_x3" pos="-0.0568079 0 -0.0453914" quat="0.984808 0 0.173648 0">
+        <inertial pos="0.000525667 -0.000152311 0.0574106" quat="0.999996 -0.000818547 -0.00276958 0.000453984" mass="0.138" diaginertia="0.000168046 0.00015128 2.70134e-05" />
+        <geom name="x3_screen" quat="0.707105 0 0 -0.707108" type="mesh" contype="0" conaffinity="0" group="1" rgba="0.0980392 0.0980392 0.0980392 1" density="0" mesh="x3_screen" />
+        <geom name="x3_lens" pos="0 0 0" quat="0.707105 0 0 -0.707108" type="mesh" contype="0" conaffinity="0" group="1" rgba="0.0980392 0.0980392 0.0980392 1" density="0" mesh="x3_lens" />
+        <geom name="x3_body" quat="0.707105 0 0 -0.707108" type="mesh" contype="0" conaffinity="0" group="1" rgba="0.34902 0.34902 0.34902 1" density="0" mesh="x3_body" />
+      </body>
+    </body>
+  </worldbody>
+  <contact>
+    <exclude body1="base" body2="base_tag" />
+    <exclude body1="base" body2="camera" />
+    <exclude body1="left_finger" body2="left_finger_tag" />
+    <exclude body1="base" body2="left_finger" />
+    <exclude body1="right_finger" body2="right_finger_tag" />
+    <exclude body1="base" body2="right_finger" />
+    <exclude body1="base" body2="insta_360_x3" />
+  </contact>
+  <equality>
+    <joint joint1="left_finger" joint2="right_finger" polycoef="0 -1 0 0 0" solref="0.004" solimp="0.95 0.99" />
+  </equality>
+</mujoco>

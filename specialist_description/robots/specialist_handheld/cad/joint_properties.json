@@ -1,0 +1,4 @@
+{
+  "right_finger": { "friction": 0.02 },
+  "left_finger": { "mimic": "right_finger" }
+}

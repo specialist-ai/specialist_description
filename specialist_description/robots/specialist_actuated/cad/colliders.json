@@ -1,0 +1,7 @@
+{
+  "(left|right)_tip": "mesh",
+  "(left|right)_tip_grip_tape": "mesh",
+  "(left|right)_finger_actuated": "scad",
+  "base_bottom_actuated": "scad",
+  ".*": "none"
+}

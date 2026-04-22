@@ -1,0 +1,7 @@
+.venv/
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+specialist_description/robots/*/cad/assets/
+specialist_description/robots/*/cad/robot.pkl
+specialist_description/robots/*/cad/scad/*.stl

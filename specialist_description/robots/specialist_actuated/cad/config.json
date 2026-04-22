@@ -1,0 +1,12 @@
+{
+  "output_format": "urdf",
+  "output_filename": "specialist_actuated",
+  "robot_name": "specialist_actuated",
+  "document_id": "af7dc068987155a0fd399205",
+  "workspace_id": "93ade81fdfbc068ba3469754",
+  "assembly_name": "Actuated Gripper",
+  "include_configuration_suffix": false,
+  "joint_properties": {
+    "default": { "max_effort": 3, "max_velocity": 4.71 }
+  }
+}
