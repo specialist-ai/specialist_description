@@ -16,7 +16,7 @@
   </asset>
   <worldbody>
     <body name="base">
-      <inertial pos="-0.0192131 -0.000149177 -0.0228491" quat="0.00306424 0.48496 0.0127829 0.874437" mass="0.107008" diaginertia="6.38192e-05 5.33603e-05 3.45512e-05" />
+      <inertial pos="-0.0190251 -0.00014627 -0.022599" quat="0.00261826 0.484515 0.0127909 0.874685" mass="0.109303" diaginertia="6.48283e-05 5.39292e-05 3.53301e-05" />
       <geom name="hex_socket_head_cap_screw_m3x0_50_x_25_0" pos="-0.018 -0.0125 0" quat="1.32679e-06 0 0 1" type="mesh" contype="0" conaffinity="0" group="1" rgba="0.603922 0.647059 0.686275 1" density="0" mesh="hex_socket_head_cap_screw_m3x0_50_x_25" />
       <geom name="base_top_handheld" quat="0.707105 0 0 -0.707108" type="mesh" contype="0" conaffinity="0" group="1" rgba="0.2 0.2 0.2 1" density="0" mesh="base_top_handheld" />
       <geom name="base_collider_0" size="0.014 0.01925 0.025" pos="-0.005 0 -0.014" quat="0.499998 0.5 0.5 -0.500002" type="box" contype="2" rgba="0.2 0.2 0.2 1" />
@@ -25,7 +25,7 @@
       <geom name="base_collider_3" size="0.007915 0.025005 0.014265" pos="-0.05252 0 -0.04406" quat="0.00019373 0.819201 -0.000192433 -0.573507" type="box" contype="2" rgba="0.2 0.2 0.2 1" />
       <geom name="base_collider_4" size="0.011375 0.023 0.05675" pos="-0.0374 0 0.00794" quat="1.30664e-06 0.984808 2.30396e-07 -0.173648" type="box" contype="2" rgba="0.2 0.2 0.2 1" />
       <geom name="base_collider_5" size="0.01581" pos="-0.02499 0 0.04202" quat="0.707105 0 0 -0.707108" contype="2" rgba="0.2 0.2 0.2 1" />
-      <geom name="base_bottom_handheld" quat="0.707105 0 0 -0.707108" type="mesh" contype="0" conaffinity="0" group="1" rgba="0.2 0.2 0.2 1" density="0" mesh="base_bottom_handheld" />
+      <geom name="base_bottom_handheld" pos="0 0 0" quat="0.707105 0 0 -0.707108" type="mesh" contype="0" conaffinity="0" group="1" rgba="0.2 0.2 0.2 1" density="0" mesh="base_bottom_handheld" />
       <geom name="hex_socket_head_cap_screw_m3x0_50_x_25_1" pos="-0.018 0.0125 0" quat="1.32679e-06 0 0 1" type="mesh" contype="0" conaffinity="0" group="1" rgba="0.603922 0.647059 0.686275 1" density="0" mesh="hex_socket_head_cap_screw_m3x0_50_x_25" />
       <body name="base_tag">
         <inertial pos="0 0 0" mass="1e-09" diaginertia="0 0 0" />
@@ -39,9 +39,9 @@
         <geom name="x3_lens" pos="0 0 0" quat="0.707105 0 0 -0.707108" type="mesh" contype="0" conaffinity="0" group="1" rgba="0.0980392 0.0980392 0.0980392 1" density="0" mesh="x3_lens" />
         <geom name="x3_body" quat="0.707105 0 0 -0.707108" type="mesh" contype="0" conaffinity="0" group="1" rgba="0.34902 0.34902 0.34902 1" density="0" mesh="x3_body" />
       </body>
-      <body name="left_finger" pos="0 0.0125 -0.00798">
-        <inertial pos="0.0332567 0.0146616 -0.00932731" quat="-0.0987895 0.733833 -0.0917606 0.665815" mass="0.0335409" diaginertia="2.69987e-05 2.62031e-05 4.94931e-06" />
-        <joint name="left_finger" range="-0.261799 0.698132" actuatorfrcrange="-3 3" />
+      <body name="left_finger" pos="0 0.0125 -0.008">
+        <inertial pos="0.0330549 0.0147176 -0.00931411" quat="-0.10028 0.733619 -0.0937785 0.665547" mass="0.0331943" diaginertia="2.64681e-05 2.56742e-05 4.91018e-06" />
+        <joint name="left_finger" range="-0.349066 0.698132" actuatorfrcrange="-3 3" />
         <geom name="left_tip_0" pos="0 -0.0125 0.008" quat="0.707105 0 0 -0.707108" type="mesh" contype="0" conaffinity="0" group="1" rgba="0.952941 0.901961 0 1" density="0" mesh="left_tip" />
         <geom name="left_tip_1" pos="0 -0.0125 0.008" quat="0.707105 0 0 -0.707108" type="mesh" condim="4" rgba="0.952941 0.901961 0 1" mesh="left_tip" />
         <geom name="left_finger_collider_0" size="0.020575 0.0131 0.00489" pos="0.00247 0.013575 -0.00489" quat="0.707105 0 0 -0.707108" type="box" contype="2" rgba="0.952941 0.901961 0 1" />
@@ -54,9 +54,9 @@
           <inertial pos="0 0 0" mass="1e-09" diaginertia="0 0 0" />
         </body>
       </body>
-      <body name="right_finger" pos="0 -0.0125 -0.00798">
-        <inertial pos="0.0333244 -0.0147061 -0.00933593" quat="0.101996 0.733132 0.0970145 0.665359" mass="0.0334751" diaginertia="2.6884e-05 2.6113e-05 4.91706e-06" />
-        <joint name="right_finger" range="-0.698132 0.261799" actuatorfrcrange="-3 3" frictionloss="0.02" />
+      <body name="right_finger" pos="0 -0.0125 -0.008">
+        <inertial pos="0.0331257 -0.0147644 -0.00932304" quat="0.103686 0.732858 0.0993633 0.665053" mass="0.033126" diaginertia="2.63494e-05 2.55812e-05 4.87624e-06" />
+        <joint name="right_finger" range="-0.698132 0.349066" actuatorfrcrange="-3 3" frictionloss="0.02" />
         <geom name="right_tip_0" pos="0 0.0125 0.008" quat="0.707105 0 0 -0.707108" type="mesh" contype="0" conaffinity="0" group="1" rgba="0.952941 0.901961 0 1" density="0" mesh="right_tip" />
         <geom name="right_tip_1" pos="0 0.0125 0.008" quat="0.707105 0 0 -0.707108" type="mesh" condim="4" rgba="0.952941 0.901961 0 1" mesh="right_tip" />
         <geom name="right_finger_collider_0" size="0.02057 0.01308 0.00489" pos="0.00258 -0.01357 -0.00489" quat="0.707105 0 0 -0.707108" type="box" contype="2" rgba="0.952941 0.901961 0 1" />

@@ -2,9 +2,9 @@
   <!-- Link base -->
   <link name="base">
     <inertial>
-      <origin xyz="-0.0192131 -0.000149177 -0.0228491" rpy="0 0 0" />
-      <mass value="0.107008" />
-      <inertia ixx="4.27614e-05" ixy="-4.07609e-07" ixz="-1.3142e-05" iyy="5.33565e-05" iyz="-3.5473e-08" izz="5.56128e-05" />
+      <origin xyz="-0.0190251 -0.00014627 -0.022599" rpy="0 0 0" />
+      <mass value="0.109303" />
+      <inertia ixx="4.36322e-05" ixy="-4.10918e-07" ixz="-1.32586e-05" iyy="5.3925e-05" iyz="-3.8817e-08" izz="5.65304e-05" />
     </inertial>
     <!-- Part hex_socket_head_cap_screw_m3x0_50_x_25 -->
     <visual>
@@ -162,9 +162,9 @@
   <!-- Link left_finger -->
   <link name="left_finger">
     <inertial>
-      <origin xyz="0.0332567 0.0146616 -0.00932731" rpy="0 0 0" />
-      <mass value="0.0335409" />
-      <inertia ixx="5.15502e-06" ixy="-5.02746e-07" ixz="2.05927e-06" iyy="2.62484e-05" iyz="-1.57654e-07" izz="2.67476e-05" />
+      <origin xyz="0.0330549 0.0147176 -0.00931411" rpy="0 0 0" />
+      <mass value="0.0331943" />
+      <inertia ixx="5.11131e-06" ixy="-4.81794e-07" ixz="2.01571e-06" iyy="2.57222e-05" iyz="-1.62588e-07" izz="2.6219e-05" />
     </inertial>
     <!-- Part left_tip -->
     <visual>
@@ -244,23 +244,23 @@
   </joint>
   <!-- Joint from base to left_finger -->
   <joint name="left_finger" type="revolute">
-    <origin xyz="0 0.0125 -0.00798" rpy="0 -0 -0" />
+    <origin xyz="-0 0.0125 -0.008" rpy="0 -0 -0" />
     <parent link="base" />
     <child link="left_finger" />
     <axis xyz="0 0 1" />
-    <limit effort="3" velocity="100" lower="-0.261799" upper="0.698132" />
+    <limit effort="3" velocity="100" lower="-0.349066" upper="0.698132" />
     <mimic joint="right_finger" multiplier="-1.0" />
   </joint>
   <!-- Link right_finger -->
   <link name="right_finger">
     <inertial>
-      <origin xyz="0.0333244 -0.0147061 -0.00933593" rpy="0 0 0" />
-      <mass value="0.0334751" />
-      <inertia ixx="5.11945e-06" ixy="4.52085e-07" ixz="2.04935e-06" iyy="2.61637e-05" iyz="1.64186e-07" izz="2.66309e-05" />
+      <origin xyz="0.0331257 -0.0147644 -0.00932304" rpy="0 0 0" />
+      <mass value="0.033126" />
+      <inertia ixx="5.07399e-06" ixy="4.29132e-07" ixz="2.00552e-06" iyy="2.56348e-05" iyz="1.69331e-07" izz="2.6098e-05" />
     </inertial>
     <!-- Part right_tip -->
     <visual>
-      <origin xyz="0 0.0125 0.008" rpy="-0 -0 -1.5708" />
+      <origin xyz="0 0.0125 0.008" rpy="-0 0 -1.5708" />
       <geometry>
         <mesh filename="../meshes/right_tip.stl" />
       </geometry>
@@ -269,32 +269,32 @@
       </material>
     </visual>
     <collision>
-      <origin xyz="0 0.0125 0.008" rpy="-0 -0 -1.5708" />
+      <origin xyz="0 0.0125 0.008" rpy="-0 0 -1.5708" />
       <geometry>
         <mesh filename="../meshes/right_tip.stl" />
       </geometry>
     </collision>
     <!-- Part right_finger_handheld -->
     <collision>
-      <origin xyz="0.00258 -0.01357 -0.00489" rpy="-0 -0 -1.5708" />
+      <origin xyz="0.00258 -0.01357 -0.00489" rpy="-0 0 -1.5708" />
       <geometry>
         <box size="0.04114 0.02616 0.00978" />
       </geometry>
     </collision>
     <collision>
-      <origin xyz="0.04283 -0.02119 -0.00489" rpy="-0 -0 -1.5708" />
+      <origin xyz="0.04283 -0.02119 -0.00489" rpy="-0 0 -1.5708" />
       <geometry>
         <box size="0.02662 0.05434 0.00978" />
       </geometry>
     </collision>
     <collision>
-      <origin xyz="0.04645 -0.016 -0.0252" rpy="0.347495 -0 -1.5708" />
+      <origin xyz="0.04645 -0.016 -0.0252" rpy="0.347495 0 -1.5708" />
       <geometry>
         <box size="0.007 0.04042 0.015" />
       </geometry>
     </collision>
     <visual>
-      <origin xyz="0 0.0125 0.008" rpy="-0 -0 -1.5708" />
+      <origin xyz="0 0.0125 0.008" rpy="-0 0 -1.5708" />
       <geometry>
         <mesh filename="../meshes/right_finger_handheld.stl" />
       </geometry>
@@ -304,7 +304,7 @@
     </visual>
     <!-- Part right_tip_grip_tape -->
     <visual>
-      <origin xyz="0 0.0125 0.008" rpy="-0 -0 -1.5708" />
+      <origin xyz="0 0.0125 0.008" rpy="-0 0 -1.5708" />
       <geometry>
         <mesh filename="../meshes/right_tip_grip_tape.stl" />
       </geometry>
@@ -313,7 +313,7 @@
       </material>
     </visual>
     <collision>
-      <origin xyz="0 0.0125 0.008" rpy="-0 -0 -1.5708" />
+      <origin xyz="0 0.0125 0.008" rpy="-0 0 -1.5708" />
       <geometry>
         <mesh filename="../meshes/right_tip_grip_tape.stl" />
       </geometry>
@@ -329,18 +329,18 @@
     </inertial>
   </link>
   <joint name="right_finger_tag_frame" type="fixed">
-    <origin xyz="0.04 -0.0225 0" rpy="0 0 -0" />
+    <origin xyz="0.04 -0.0225 0" rpy="0 0 0" />
     <parent link="right_finger" />
     <child link="right_finger_tag" />
     <axis xyz="0 0 0" />
   </joint>
   <!-- Joint from base to right_finger -->
   <joint name="right_finger" type="revolute">
-    <origin xyz="0 -0.0125 -0.00798" rpy="0 -0 0" />
+    <origin xyz="-0 -0.0125 -0.008" rpy="-0 -0 0" />
     <parent link="base" />
     <child link="right_finger" />
     <axis xyz="0 0 1" />
-    <limit effort="3" velocity="100" lower="-0.698132" upper="0.261799" />
+    <limit effort="3" velocity="100" lower="-0.698132" upper="0.349066" />
     <dynamics friction="0.02" />
   </joint>
 </robot>
