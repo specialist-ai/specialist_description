@@ -1,6 +1,8 @@
 {
-  "(left|right)_tip": "mesh",
-  "(left|right)_tip_grip_tape": "mesh",
+  "right_tip": "mesh",
+  "right_tip_grip_tape": "mesh",
+  "left_tip": { "mirror": "right_tip" },
+  "left_tip_grip_tape": { "mirror": "right_tip_grip_tape" },
   "(left|right)_finger_handheld": "scad",
   "base_bottom_handheld": "scad",
   ".*": "none"

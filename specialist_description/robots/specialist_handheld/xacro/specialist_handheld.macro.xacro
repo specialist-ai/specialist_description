@@ -185,7 +185,73 @@
       <collision>
         <origin xyz="0 -0.0125 0.008" rpy="0 -0 -1.5708" />
         <geometry>
-          <mesh filename="${mesh_root}/left_tip.stl" />
+          <mesh filename="${mesh_root}/left_tip_00000.stl" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0 -0.0125 0.008" rpy="0 -0 -1.5708" />
+        <geometry>
+          <mesh filename="${mesh_root}/left_tip_00001.stl" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0 -0.0125 0.008" rpy="0 -0 -1.5708" />
+        <geometry>
+          <mesh filename="${mesh_root}/left_tip_00002.stl" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0 -0.0125 0.008" rpy="0 -0 -1.5708" />
+        <geometry>
+          <mesh filename="${mesh_root}/left_tip_00003.stl" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0 -0.0125 0.008" rpy="0 -0 -1.5708" />
+        <geometry>
+          <mesh filename="${mesh_root}/left_tip_00004.stl" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0 -0.0125 0.008" rpy="0 -0 -1.5708" />
+        <geometry>
+          <mesh filename="${mesh_root}/left_tip_00005.stl" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0 -0.0125 0.008" rpy="0 -0 -1.5708" />
+        <geometry>
+          <mesh filename="${mesh_root}/left_tip_00006.stl" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0 -0.0125 0.008" rpy="0 -0 -1.5708" />
+        <geometry>
+          <mesh filename="${mesh_root}/left_tip_00007.stl" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0 -0.0125 0.008" rpy="0 -0 -1.5708" />
+        <geometry>
+          <mesh filename="${mesh_root}/left_tip_00008.stl" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0 -0.0125 0.008" rpy="0 -0 -1.5708" />
+        <geometry>
+          <mesh filename="${mesh_root}/left_tip_00009.stl" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0 -0.0125 0.008" rpy="0 -0 -1.5708" />
+        <geometry>
+          <mesh filename="${mesh_root}/left_tip_00010.stl" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0 -0.0125 0.008" rpy="0 -0 -1.5708" />
+        <geometry>
+          <mesh filename="${mesh_root}/left_tip_00011.stl" />
         </geometry>
       </collision>
       <!-- Part left_finger_handheld -->
@@ -229,7 +295,37 @@
       <collision>
         <origin xyz="0 -0.0125 0.008" rpy="0 -0 -1.5708" />
         <geometry>
-          <mesh filename="${mesh_root}/left_tip_grip_tape.stl" />
+          <mesh filename="${mesh_root}/left_tip_grip_tape_00000.stl" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0 -0.0125 0.008" rpy="0 -0 -1.5708" />
+        <geometry>
+          <mesh filename="${mesh_root}/left_tip_grip_tape_00001.stl" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0 -0.0125 0.008" rpy="0 -0 -1.5708" />
+        <geometry>
+          <mesh filename="${mesh_root}/left_tip_grip_tape_00002.stl" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0 -0.0125 0.008" rpy="0 -0 -1.5708" />
+        <geometry>
+          <mesh filename="${mesh_root}/left_tip_grip_tape_00003.stl" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0 -0.0125 0.008" rpy="0 -0 -1.5708" />
+        <geometry>
+          <mesh filename="${mesh_root}/left_tip_grip_tape_00004.stl" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0 -0.0125 0.008" rpy="0 -0 -1.5708" />
+        <geometry>
+          <mesh filename="${mesh_root}/left_tip_grip_tape_00005.stl" />
         </geometry>
       </collision>
     </link>
@@ -277,7 +373,73 @@
       <collision>
         <origin xyz="0 0.0125 0.008" rpy="-0 0 -1.5708" />
         <geometry>
-          <mesh filename="${mesh_root}/right_tip.stl" />
+          <mesh filename="${mesh_root}/right_tip_00000.stl" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0 0.0125 0.008" rpy="-0 0 -1.5708" />
+        <geometry>
+          <mesh filename="${mesh_root}/right_tip_00001.stl" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0 0.0125 0.008" rpy="-0 0 -1.5708" />
+        <geometry>
+          <mesh filename="${mesh_root}/right_tip_00002.stl" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0 0.0125 0.008" rpy="-0 0 -1.5708" />
+        <geometry>
+          <mesh filename="${mesh_root}/right_tip_00003.stl" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0 0.0125 0.008" rpy="-0 0 -1.5708" />
+        <geometry>
+          <mesh filename="${mesh_root}/right_tip_00004.stl" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0 0.0125 0.008" rpy="-0 0 -1.5708" />
+        <geometry>
+          <mesh filename="${mesh_root}/right_tip_00005.stl" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0 0.0125 0.008" rpy="-0 0 -1.5708" />
+        <geometry>
+          <mesh filename="${mesh_root}/right_tip_00006.stl" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0 0.0125 0.008" rpy="-0 0 -1.5708" />
+        <geometry>
+          <mesh filename="${mesh_root}/right_tip_00007.stl" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0 0.0125 0.008" rpy="-0 0 -1.5708" />
+        <geometry>
+          <mesh filename="${mesh_root}/right_tip_00008.stl" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0 0.0125 0.008" rpy="-0 0 -1.5708" />
+        <geometry>
+          <mesh filename="${mesh_root}/right_tip_00009.stl" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0 0.0125 0.008" rpy="-0 0 -1.5708" />
+        <geometry>
+          <mesh filename="${mesh_root}/right_tip_00010.stl" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0 0.0125 0.008" rpy="-0 0 -1.5708" />
+        <geometry>
+          <mesh filename="${mesh_root}/right_tip_00011.stl" />
         </geometry>
       </collision>
       <!-- Part right_finger_handheld -->
@@ -321,7 +483,37 @@
       <collision>
         <origin xyz="0 0.0125 0.008" rpy="-0 0 -1.5708" />
         <geometry>
-          <mesh filename="${mesh_root}/right_tip_grip_tape.stl" />
+          <mesh filename="${mesh_root}/right_tip_grip_tape_00000.stl" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0 0.0125 0.008" rpy="-0 0 -1.5708" />
+        <geometry>
+          <mesh filename="${mesh_root}/right_tip_grip_tape_00001.stl" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0 0.0125 0.008" rpy="-0 0 -1.5708" />
+        <geometry>
+          <mesh filename="${mesh_root}/right_tip_grip_tape_00002.stl" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0 0.0125 0.008" rpy="-0 0 -1.5708" />
+        <geometry>
+          <mesh filename="${mesh_root}/right_tip_grip_tape_00003.stl" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0 0.0125 0.008" rpy="-0 0 -1.5708" />
+        <geometry>
+          <mesh filename="${mesh_root}/right_tip_grip_tape_00004.stl" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0 0.0125 0.008" rpy="-0 0 -1.5708" />
+        <geometry>
+          <mesh filename="${mesh_root}/right_tip_grip_tape_00005.stl" />
         </geometry>
       </collision>
     </link>

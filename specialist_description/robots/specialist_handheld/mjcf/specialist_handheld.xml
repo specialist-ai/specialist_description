@@ -8,11 +8,47 @@
     <mesh name="x3_lens" content_type="model/stl" file="../meshes/x3_lens.stl" />
     <mesh name="x3_body" content_type="model/stl" file="../meshes/x3_body.stl" />
     <mesh name="left_tip" content_type="model/stl" file="../meshes/left_tip.stl" />
+    <mesh name="left_tip_00000" content_type="model/stl" file="../meshes/left_tip_00000.stl" />
+    <mesh name="left_tip_00001" content_type="model/stl" file="../meshes/left_tip_00001.stl" />
+    <mesh name="left_tip_00002" content_type="model/stl" file="../meshes/left_tip_00002.stl" />
+    <mesh name="left_tip_00003" content_type="model/stl" file="../meshes/left_tip_00003.stl" />
+    <mesh name="left_tip_00004" content_type="model/stl" file="../meshes/left_tip_00004.stl" />
+    <mesh name="left_tip_00005" content_type="model/stl" file="../meshes/left_tip_00005.stl" />
+    <mesh name="left_tip_00006" content_type="model/stl" file="../meshes/left_tip_00006.stl" />
+    <mesh name="left_tip_00007" content_type="model/stl" file="../meshes/left_tip_00007.stl" />
+    <mesh name="left_tip_00008" content_type="model/stl" file="../meshes/left_tip_00008.stl" />
+    <mesh name="left_tip_00009" content_type="model/stl" file="../meshes/left_tip_00009.stl" />
+    <mesh name="left_tip_00010" content_type="model/stl" file="../meshes/left_tip_00010.stl" />
+    <mesh name="left_tip_00011" content_type="model/stl" file="../meshes/left_tip_00011.stl" />
     <mesh name="left_finger_handheld" content_type="model/stl" file="../meshes/left_finger_handheld.stl" />
     <mesh name="left_tip_grip_tape" content_type="model/stl" file="../meshes/left_tip_grip_tape.stl" />
+    <mesh name="left_tip_grip_tape_00000" content_type="model/stl" file="../meshes/left_tip_grip_tape_00000.stl" />
+    <mesh name="left_tip_grip_tape_00001" content_type="model/stl" file="../meshes/left_tip_grip_tape_00001.stl" />
+    <mesh name="left_tip_grip_tape_00002" content_type="model/stl" file="../meshes/left_tip_grip_tape_00002.stl" />
+    <mesh name="left_tip_grip_tape_00003" content_type="model/stl" file="../meshes/left_tip_grip_tape_00003.stl" />
+    <mesh name="left_tip_grip_tape_00004" content_type="model/stl" file="../meshes/left_tip_grip_tape_00004.stl" />
+    <mesh name="left_tip_grip_tape_00005" content_type="model/stl" file="../meshes/left_tip_grip_tape_00005.stl" />
     <mesh name="right_tip" content_type="model/stl" file="../meshes/right_tip.stl" />
+    <mesh name="right_tip_00000" content_type="model/stl" file="../meshes/right_tip_00000.stl" />
+    <mesh name="right_tip_00001" content_type="model/stl" file="../meshes/right_tip_00001.stl" />
+    <mesh name="right_tip_00002" content_type="model/stl" file="../meshes/right_tip_00002.stl" />
+    <mesh name="right_tip_00003" content_type="model/stl" file="../meshes/right_tip_00003.stl" />
+    <mesh name="right_tip_00004" content_type="model/stl" file="../meshes/right_tip_00004.stl" />
+    <mesh name="right_tip_00005" content_type="model/stl" file="../meshes/right_tip_00005.stl" />
+    <mesh name="right_tip_00006" content_type="model/stl" file="../meshes/right_tip_00006.stl" />
+    <mesh name="right_tip_00007" content_type="model/stl" file="../meshes/right_tip_00007.stl" />
+    <mesh name="right_tip_00008" content_type="model/stl" file="../meshes/right_tip_00008.stl" />
+    <mesh name="right_tip_00009" content_type="model/stl" file="../meshes/right_tip_00009.stl" />
+    <mesh name="right_tip_00010" content_type="model/stl" file="../meshes/right_tip_00010.stl" />
+    <mesh name="right_tip_00011" content_type="model/stl" file="../meshes/right_tip_00011.stl" />
     <mesh name="right_finger_handheld" content_type="model/stl" file="../meshes/right_finger_handheld.stl" />
     <mesh name="right_tip_grip_tape" content_type="model/stl" file="../meshes/right_tip_grip_tape.stl" />
+    <mesh name="right_tip_grip_tape_00000" content_type="model/stl" file="../meshes/right_tip_grip_tape_00000.stl" />
+    <mesh name="right_tip_grip_tape_00001" content_type="model/stl" file="../meshes/right_tip_grip_tape_00001.stl" />
+    <mesh name="right_tip_grip_tape_00002" content_type="model/stl" file="../meshes/right_tip_grip_tape_00002.stl" />
+    <mesh name="right_tip_grip_tape_00003" content_type="model/stl" file="../meshes/right_tip_grip_tape_00003.stl" />
+    <mesh name="right_tip_grip_tape_00004" content_type="model/stl" file="../meshes/right_tip_grip_tape_00004.stl" />
+    <mesh name="right_tip_grip_tape_00005" content_type="model/stl" file="../meshes/right_tip_grip_tape_00005.stl" />
   </asset>
   <worldbody>
     <body name="base">
@@ -42,14 +78,30 @@
       <body name="left_finger" pos="0 0.0125 -0.008">
         <inertial pos="0.0330549 0.0147176 -0.00931411" quat="-0.10028 0.733619 -0.0937785 0.665547" mass="0.0331943" diaginertia="2.64681e-05 2.56742e-05 4.91018e-06" />
         <joint name="left_finger" range="-0.349066 0.698132" actuatorfrcrange="-3 3" />
-        <geom name="left_tip_0" pos="0 -0.0125 0.008" quat="0.707105 0 0 -0.707108" type="mesh" contype="0" conaffinity="0" group="1" rgba="0.952941 0.901961 0 1" density="0" mesh="left_tip" />
-        <geom name="left_tip_1" pos="0 -0.0125 0.008" quat="0.707105 0 0 -0.707108" type="mesh" condim="4" rgba="0.952941 0.901961 0 1" mesh="left_tip" />
+        <geom name="left_tip" pos="0 -0.0125 0.008" quat="0.707105 0 0 -0.707108" type="mesh" contype="0" conaffinity="0" group="1" rgba="0.952941 0.901961 0 1" density="0" mesh="left_tip" />
+        <geom name="left_tip_00000" pos="0 -0.0125 0.008" quat="0.707105 0 0 -0.707108" type="mesh" condim="4" rgba="0.952941 0.901961 0 1" mesh="left_tip_00000" />
+        <geom name="left_tip_00001" pos="0 -0.0125 0.008" quat="0.707105 0 0 -0.707108" type="mesh" condim="4" rgba="0.952941 0.901961 0 1" mesh="left_tip_00001" />
+        <geom name="left_tip_00002" pos="0 -0.0125 0.008" quat="0.707105 0 0 -0.707108" type="mesh" condim="4" rgba="0.952941 0.901961 0 1" mesh="left_tip_00002" />
+        <geom name="left_tip_00003" pos="0 -0.0125 0.008" quat="0.707105 0 0 -0.707108" type="mesh" condim="4" rgba="0.952941 0.901961 0 1" mesh="left_tip_00003" />
+        <geom name="left_tip_00004" pos="0 -0.0125 0.008" quat="0.707105 0 0 -0.707108" type="mesh" condim="4" rgba="0.952941 0.901961 0 1" mesh="left_tip_00004" />
+        <geom name="left_tip_00005" pos="0 -0.0125 0.008" quat="0.707105 0 0 -0.707108" type="mesh" condim="4" rgba="0.952941 0.901961 0 1" mesh="left_tip_00005" />
+        <geom name="left_tip_00006" pos="0 -0.0125 0.008" quat="0.707105 0 0 -0.707108" type="mesh" condim="4" rgba="0.952941 0.901961 0 1" mesh="left_tip_00006" />
+        <geom name="left_tip_00007" pos="0 -0.0125 0.008" quat="0.707105 0 0 -0.707108" type="mesh" condim="4" rgba="0.952941 0.901961 0 1" mesh="left_tip_00007" />
+        <geom name="left_tip_00008" pos="0 -0.0125 0.008" quat="0.707105 0 0 -0.707108" type="mesh" condim="4" rgba="0.952941 0.901961 0 1" mesh="left_tip_00008" />
+        <geom name="left_tip_00009" pos="0 -0.0125 0.008" quat="0.707105 0 0 -0.707108" type="mesh" condim="4" rgba="0.952941 0.901961 0 1" mesh="left_tip_00009" />
+        <geom name="left_tip_00010" pos="0 -0.0125 0.008" quat="0.707105 0 0 -0.707108" type="mesh" condim="4" rgba="0.952941 0.901961 0 1" mesh="left_tip_00010" />
+        <geom name="left_tip_00011" pos="0 -0.0125 0.008" quat="0.707105 0 0 -0.707108" type="mesh" condim="4" rgba="0.952941 0.901961 0 1" mesh="left_tip_00011" />
         <geom name="left_finger_collider_0" size="0.020575 0.0131 0.00489" pos="0.00247 0.013575 -0.00489" quat="0.707105 0 0 -0.707108" type="box" contype="2" rgba="0.952941 0.901961 0 1" />
         <geom name="left_finger_collider_1" size="0.01348 0.02721 0.00489" pos="0.04279 0.02102 -0.00489" quat="0.707105 0 0 -0.707108" type="box" contype="2" rgba="0.952941 0.901961 0 1" />
         <geom name="left_finger_collider_2" size="0.0035 0.02021 0.0075" pos="0.04645 0.016 -0.0252" quat="0.696459 0.122241 -0.122241 -0.696462" type="box" contype="2" rgba="0.952941 0.901961 0 1" />
         <geom name="left_finger_handheld" pos="0 -0.0125 0.008" quat="0.707105 0 0 -0.707108" type="mesh" contype="0" conaffinity="0" group="1" rgba="0.2 0.2 0.2 1" density="0" mesh="left_finger_handheld" />
-        <geom name="left_tip_grip_tape_0" pos="0 -0.0125 0.008" quat="0.707105 0 0 -0.707108" type="mesh" contype="0" conaffinity="0" group="1" rgba="0 0 0 1" density="0" mesh="left_tip_grip_tape" />
-        <geom name="left_tip_grip_tape_1" pos="0 -0.0125 0.008" quat="0.707105 0 0 -0.707108" type="mesh" condim="4" rgba="0 0 0 1" mesh="left_tip_grip_tape" />
+        <geom name="left_tip_grip_tape" pos="0 -0.0125 0.008" quat="0.707105 0 0 -0.707108" type="mesh" contype="0" conaffinity="0" group="1" rgba="0 0 0 1" density="0" mesh="left_tip_grip_tape" />
+        <geom name="left_tip_grip_tape_00000" pos="0 -0.0125 0.008" quat="0.707105 0 0 -0.707108" type="mesh" condim="4" rgba="0 0 0 1" mesh="left_tip_grip_tape_00000" />
+        <geom name="left_tip_grip_tape_00001" pos="0 -0.0125 0.008" quat="0.707105 0 0 -0.707108" type="mesh" condim="4" rgba="0 0 0 1" mesh="left_tip_grip_tape_00001" />
+        <geom name="left_tip_grip_tape_00002" pos="0 -0.0125 0.008" quat="0.707105 0 0 -0.707108" type="mesh" condim="4" rgba="0 0 0 1" mesh="left_tip_grip_tape_00002" />
+        <geom name="left_tip_grip_tape_00003" pos="0 -0.0125 0.008" quat="0.707105 0 0 -0.707108" type="mesh" condim="4" rgba="0 0 0 1" mesh="left_tip_grip_tape_00003" />
+        <geom name="left_tip_grip_tape_00004" pos="0 -0.0125 0.008" quat="0.707105 0 0 -0.707108" type="mesh" condim="4" rgba="0 0 0 1" mesh="left_tip_grip_tape_00004" />
+        <geom name="left_tip_grip_tape_00005" pos="0 -0.0125 0.008" quat="0.707105 0 0 -0.707108" type="mesh" condim="4" rgba="0 0 0 1" mesh="left_tip_grip_tape_00005" />
         <body name="left_finger_tag" pos="0.04 0.0225 0">
           <inertial pos="0 0 0" mass="1e-09" diaginertia="0 0 0" />
         </body>
@@ -57,14 +109,30 @@
       <body name="right_finger" pos="0 -0.0125 -0.008">
         <inertial pos="0.0331257 -0.0147644 -0.00932304" quat="0.103686 0.732858 0.0993633 0.665053" mass="0.033126" diaginertia="2.63494e-05 2.55812e-05 4.87624e-06" />
         <joint name="right_finger" range="-0.698132 0.349066" actuatorfrcrange="-3 3" frictionloss="0.02" />
-        <geom name="right_tip_0" pos="0 0.0125 0.008" quat="0.707105 0 0 -0.707108" type="mesh" contype="0" conaffinity="0" group="1" rgba="0.952941 0.901961 0 1" density="0" mesh="right_tip" />
-        <geom name="right_tip_1" pos="0 0.0125 0.008" quat="0.707105 0 0 -0.707108" type="mesh" condim="4" rgba="0.952941 0.901961 0 1" mesh="right_tip" />
+        <geom name="right_tip" pos="0 0.0125 0.008" quat="0.707105 0 0 -0.707108" type="mesh" contype="0" conaffinity="0" group="1" rgba="0.952941 0.901961 0 1" density="0" mesh="right_tip" />
+        <geom name="right_tip_00000" pos="0 0.0125 0.008" quat="0.707105 0 0 -0.707108" type="mesh" condim="4" rgba="0.952941 0.901961 0 1" mesh="right_tip_00000" />
+        <geom name="right_tip_00001" pos="0 0.0125 0.008" quat="0.707105 0 0 -0.707108" type="mesh" condim="4" rgba="0.952941 0.901961 0 1" mesh="right_tip_00001" />
+        <geom name="right_tip_00002" pos="0 0.0125 0.008" quat="0.707105 0 0 -0.707108" type="mesh" condim="4" rgba="0.952941 0.901961 0 1" mesh="right_tip_00002" />
+        <geom name="right_tip_00003" pos="0 0.0125 0.008" quat="0.707105 0 0 -0.707108" type="mesh" condim="4" rgba="0.952941 0.901961 0 1" mesh="right_tip_00003" />
+        <geom name="right_tip_00004" pos="0 0.0125 0.008" quat="0.707105 0 0 -0.707108" type="mesh" condim="4" rgba="0.952941 0.901961 0 1" mesh="right_tip_00004" />
+        <geom name="right_tip_00005" pos="0 0.0125 0.008" quat="0.707105 0 0 -0.707108" type="mesh" condim="4" rgba="0.952941 0.901961 0 1" mesh="right_tip_00005" />
+        <geom name="right_tip_00006" pos="0 0.0125 0.008" quat="0.707105 0 0 -0.707108" type="mesh" condim="4" rgba="0.952941 0.901961 0 1" mesh="right_tip_00006" />
+        <geom name="right_tip_00007" pos="0 0.0125 0.008" quat="0.707105 0 0 -0.707108" type="mesh" condim="4" rgba="0.952941 0.901961 0 1" mesh="right_tip_00007" />
+        <geom name="right_tip_00008" pos="0 0.0125 0.008" quat="0.707105 0 0 -0.707108" type="mesh" condim="4" rgba="0.952941 0.901961 0 1" mesh="right_tip_00008" />
+        <geom name="right_tip_00009" pos="0 0.0125 0.008" quat="0.707105 0 0 -0.707108" type="mesh" condim="4" rgba="0.952941 0.901961 0 1" mesh="right_tip_00009" />
+        <geom name="right_tip_00010" pos="0 0.0125 0.008" quat="0.707105 0 0 -0.707108" type="mesh" condim="4" rgba="0.952941 0.901961 0 1" mesh="right_tip_00010" />
+        <geom name="right_tip_00011" pos="0 0.0125 0.008" quat="0.707105 0 0 -0.707108" type="mesh" condim="4" rgba="0.952941 0.901961 0 1" mesh="right_tip_00011" />
         <geom name="right_finger_collider_0" size="0.02057 0.01308 0.00489" pos="0.00258 -0.01357 -0.00489" quat="0.707105 0 0 -0.707108" type="box" contype="2" rgba="0.952941 0.901961 0 1" />
         <geom name="right_finger_collider_1" size="0.01331 0.02717 0.00489" pos="0.04283 -0.02119 -0.00489" quat="0.707105 0 0 -0.707108" type="box" contype="2" rgba="0.952941 0.901961 0 1" />
         <geom name="right_finger_collider_2" size="0.0035 0.02021 0.0075" pos="0.04645 -0.016 -0.0252" quat="0.696459 0.122241 -0.122241 -0.696462" type="box" contype="2" rgba="0.952941 0.901961 0 1" />
         <geom name="right_finger_handheld" pos="0 0.0125 0.008" quat="0.707105 0 0 -0.707108" type="mesh" contype="0" conaffinity="0" group="1" rgba="0.2 0.2 0.2 1" density="0" mesh="right_finger_handheld" />
-        <geom name="right_tip_grip_tape_0" pos="0 0.0125 0.008" quat="0.707105 0 0 -0.707108" type="mesh" contype="0" conaffinity="0" group="1" rgba="0 0 0 1" density="0" mesh="right_tip_grip_tape" />
-        <geom name="right_tip_grip_tape_1" pos="0 0.0125 0.008" quat="0.707105 0 0 -0.707108" type="mesh" condim="4" rgba="0 0 0 1" mesh="right_tip_grip_tape" />
+        <geom name="right_tip_grip_tape" pos="0 0.0125 0.008" quat="0.707105 0 0 -0.707108" type="mesh" contype="0" conaffinity="0" group="1" rgba="0 0 0 1" density="0" mesh="right_tip_grip_tape" />
+        <geom name="right_tip_grip_tape_00000" pos="0 0.0125 0.008" quat="0.707105 0 0 -0.707108" type="mesh" condim="4" rgba="0 0 0 1" mesh="right_tip_grip_tape_00000" />
+        <geom name="right_tip_grip_tape_00001" pos="0 0.0125 0.008" quat="0.707105 0 0 -0.707108" type="mesh" condim="4" rgba="0 0 0 1" mesh="right_tip_grip_tape_00001" />
+        <geom name="right_tip_grip_tape_00002" pos="0 0.0125 0.008" quat="0.707105 0 0 -0.707108" type="mesh" condim="4" rgba="0 0 0 1" mesh="right_tip_grip_tape_00002" />
+        <geom name="right_tip_grip_tape_00003" pos="0 0.0125 0.008" quat="0.707105 0 0 -0.707108" type="mesh" condim="4" rgba="0 0 0 1" mesh="right_tip_grip_tape_00003" />
+        <geom name="right_tip_grip_tape_00004" pos="0 0.0125 0.008" quat="0.707105 0 0 -0.707108" type="mesh" condim="4" rgba="0 0 0 1" mesh="right_tip_grip_tape_00004" />
+        <geom name="right_tip_grip_tape_00005" pos="0 0.0125 0.008" quat="0.707105 0 0 -0.707108" type="mesh" condim="4" rgba="0 0 0 1" mesh="right_tip_grip_tape_00005" />
         <body name="right_finger_tag" pos="0.04 -0.0225 0">
           <inertial pos="0 0 0" mass="1e-09" diaginertia="0 0 0" />
         </body>

@@ -6,6 +6,7 @@
   "workspace_id": "93ade81fdfbc068ba3469754",
   "assembly_name": "Actuated Gripper",
   "include_configuration_suffix": false,
+  "convex_decomposition": true,
   "joint_properties": {
     "default": { "max_effort": 3, "max_velocity": 4.71 }
   }

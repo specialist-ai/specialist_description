@@ -65,9 +65,14 @@ The scripts write all directories except `cad/`. Do not edit them. Change the in
 
 | Policy | Collider |
 |---|---|
-| `"mesh"` | the part mesh, which MuJoCo collides as its convex hull |
+| `"mesh"` | the part mesh, cut into convex hulls `<part>_<index>` by [CoACD](https://github.com/SarahWeiii/CoACD) |
 | `"scad"` | the boxes and spheres in `cad/scad/<part>.scad` |
 | `"none"` | no collider |
+| `{"mirror": "<part>"}` | the CoACD hulls of `<part>`, mirrored across the yz plane of the part frame |
+
+MuJoCo collides a mesh as its convex hull, and a hull fills the profile of a fingertip. Thus CoACD cuts the tips into convex pieces.
+
+Onshape triangulates the left and right tips differently, and CoACD cuts different meshes into different hulls. Thus CoACD cuts only the right tips, and the left tips use `mirror`.
 
 Each geom in the MJCF has a unique name. A mesh geom has the name of its mesh, with an index if two geoms use the mesh. A primitive has the name `<body>_collider_<index>`. A primitive collides with the meshes but not with other primitives, because a primitive is larger than its part. The mesh colliders have `condim` 4, because only torsional friction stops a pinched object from turning.
 

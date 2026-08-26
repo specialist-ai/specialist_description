@@ -15,6 +15,7 @@ exclude = ["**/cad"]
 
 [dependency-groups]
 dev = [
+  "coacd>=1.0.13",
   "mujoco>=3.17",
   "numpy>=2.0",
   "onshape-to-robot>=1.8.0",
