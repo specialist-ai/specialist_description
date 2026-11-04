@@ -1,8 +1,10 @@
 {
   "right_tip": "mesh",
-  "right_tip_grip_tape": "mesh",
+  "right_tip_grip_tape": { "fuse": "right_tip" },
+  "right_nail": { "fuse": "right_tip" },
   "left_tip": { "mirror": "right_tip" },
   "left_tip_grip_tape": { "mirror": "right_tip_grip_tape" },
+  "left_nail": { "mirror": "right_nail" },
   "(left|right)_finger_actuated": "scad",
   "base_bottom_actuated": "scad",
   ".*": "none"

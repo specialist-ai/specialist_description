@@ -2,9 +2,9 @@
   <!-- Link base -->
   <link name="base">
     <inertial>
-      <origin xyz="-0.0209376 -8.40512e-05 -0.0325196" rpy="0 0 0" />
+      <origin xyz="-0.0209214 -8.23437e-05 -0.0325026" rpy="0 0 0" />
       <mass value="0.232538" />
-      <inertia ixx="0.000395001" ixy="6.72324e-07" ixz="3.01409e-05" iyy="0.000424036" iyz="-1.4559e-06" izz="0.000156395" />
+      <inertia ixx="0.000395067" ixy="6.637e-07" ixz="3.0002e-05" iyy="0.000424377" iyz="-1.46409e-06" izz="0.000156424" />
     </inertial>
     <!-- Part hex_socket_countersunk_head_screw_m2_5x0_45_x_16 -->
     <visual>
@@ -278,9 +278,9 @@
   <!-- Link left_finger -->
   <link name="left_finger">
     <inertial>
-      <origin xyz="0.0356392 0.0143773 -0.00938123" rpy="0 0 0" />
-      <mass value="0.027112" />
-      <inertia ixx="3.87579e-06" ixy="-8.4491e-08" ixz="1.5265e-06" iyy="2.19129e-05" iyz="-1.24684e-07" izz="2.22921e-05" />
+      <origin xyz="0.0382039 0.013984 -0.00943074" rpy="0 0 0" />
+      <mass value="0.0290935" />
+      <inertia ixx="3.93876e-06" ixy="4.34259e-07" ixz="1.56139e-06" iyy="2.62983e-05" iyz="-1.37097e-07" izz="2.67363e-05" />
     </inertial>
     <!-- Part left_tip -->
     <visual>
@@ -364,6 +364,18 @@
         <mesh filename="../meshes/left_tip_00011.stl" />
       </geometry>
     </collision>
+    <collision>
+      <origin xyz="0 -0.0125 0.008" rpy="-0 -0 -1.5708" />
+      <geometry>
+        <mesh filename="../meshes/left_tip_00012.stl" />
+      </geometry>
+    </collision>
+    <collision>
+      <origin xyz="0 -0.0125 0.008" rpy="-0 -0 -1.5708" />
+      <geometry>
+        <mesh filename="../meshes/left_tip_00013.stl" />
+      </geometry>
+    </collision>
     <!-- Part left_finger_actuated -->
     <collision>
       <origin xyz="0.00247 0.013575 -0.00489" rpy="-0 -0 -1.5708" />
@@ -392,6 +404,16 @@
         <color rgba="0.2 0.2 0.2 1" />
       </material>
     </visual>
+    <!-- Part hex_socket_countersunk_head_screw_m3x0_5_x_10 -->
+    <visual>
+      <origin xyz="0.062 0.0175 -0.01" rpy="-1.5708 1.5708 0" />
+      <geometry>
+        <mesh filename="../meshes/hex_socket_countersunk_head_screw_m3x0_5_x_10.stl" />
+      </geometry>
+      <material name="hex_socket_countersunk_head_screw_m3x0_5_x_10_material">
+        <color rgba="0.603922 0.647059 0.686275 1" />
+      </material>
+    </visual>
     <!-- Part left_tip_grip_tape -->
     <visual>
       <origin xyz="0 -0.0125 0.008" rpy="-0 -0 -1.5708" />
@@ -402,60 +424,44 @@
         <color rgba="0 0 0 1" />
       </material>
     </visual>
-    <collision>
-      <origin xyz="0 -0.0125 0.008" rpy="-0 -0 -1.5708" />
-      <geometry>
-        <mesh filename="../meshes/left_tip_grip_tape_00000.stl" />
-      </geometry>
-    </collision>
-    <collision>
-      <origin xyz="0 -0.0125 0.008" rpy="-0 -0 -1.5708" />
-      <geometry>
-        <mesh filename="../meshes/left_tip_grip_tape_00001.stl" />
-      </geometry>
-    </collision>
-    <collision>
-      <origin xyz="0 -0.0125 0.008" rpy="-0 -0 -1.5708" />
-      <geometry>
-        <mesh filename="../meshes/left_tip_grip_tape_00002.stl" />
-      </geometry>
-    </collision>
-    <collision>
-      <origin xyz="0 -0.0125 0.008" rpy="-0 -0 -1.5708" />
-      <geometry>
-        <mesh filename="../meshes/left_tip_grip_tape_00003.stl" />
-      </geometry>
-    </collision>
-    <collision>
-      <origin xyz="0 -0.0125 0.008" rpy="-0 -0 -1.5708" />
-      <geometry>
-        <mesh filename="../meshes/left_tip_grip_tape_00004.stl" />
-      </geometry>
-    </collision>
-    <collision>
-      <origin xyz="0 -0.0125 0.008" rpy="-0 -0 -1.5708" />
-      <geometry>
-        <mesh filename="../meshes/left_tip_grip_tape_00005.stl" />
-      </geometry>
-    </collision>
-    <!-- Part hex_socket_countersunk_head_screw_m3x0_5_x_8_5 -->
+    <!-- Part hex_socket_countersunk_head_screw_m3x0_5_x_10_2 -->
     <visual>
-      <origin xyz="0.062 0.0175 -0.01" rpy="-1.5708 0 -0" />
+      <origin xyz="0.032 0.0175 -0.01" rpy="-1.5708 1.5708 0" />
       <geometry>
-        <mesh filename="../meshes/hex_socket_countersunk_head_screw_m3x0_5_x_8.stl" />
+        <mesh filename="../meshes/hex_socket_countersunk_head_screw_m3x0_5_x_10.stl" />
       </geometry>
-      <material name="hex_socket_countersunk_head_screw_m3x0_5_x_8_5_material">
+      <material name="hex_socket_countersunk_head_screw_m3x0_5_x_10_2_material">
         <color rgba="0.603922 0.647059 0.686275 1" />
       </material>
     </visual>
-    <!-- Part hex_socket_countersunk_head_screw_m3x0_5_x_8_6 -->
+    <!-- Part hex_nut_grade_a___b_m3x0_5 -->
     <visual>
-      <origin xyz="0.032 0.0175 -0.01" rpy="-1.5708 0 -0" />
+      <origin xyz="0.062 0.0083 -0.01" rpy="1.5708 1.5708 0" />
       <geometry>
-        <mesh filename="../meshes/hex_socket_countersunk_head_screw_m3x0_5_x_8.stl" />
+        <mesh filename="../meshes/hex_nut_grade_a___b_m3x0_5.stl" />
       </geometry>
-      <material name="hex_socket_countersunk_head_screw_m3x0_5_x_8_6_material">
+      <material name="hex_nut_grade_a___b_m3x0_5_material">
         <color rgba="0.603922 0.647059 0.686275 1" />
+      </material>
+    </visual>
+    <!-- Part hex_nut_grade_a___b_m3x0_5_2 -->
+    <visual>
+      <origin xyz="0.032 0.0083 -0.01" rpy="1.5708 1.5708 0" />
+      <geometry>
+        <mesh filename="../meshes/hex_nut_grade_a___b_m3x0_5.stl" />
+      </geometry>
+      <material name="hex_nut_grade_a___b_m3x0_5_2_material">
+        <color rgba="0.603922 0.647059 0.686275 1" />
+      </material>
+    </visual>
+    <!-- Part left_nail -->
+    <visual>
+      <origin xyz="0 -0.0125 0.008" rpy="-0 -0 -1.5708" />
+      <geometry>
+        <mesh filename="../meshes/left_nail.stl" />
+      </geometry>
+      <material name="left_nail_material">
+        <color rgba="0.262745 0.282353 0.301961 1" />
       </material>
     </visual>
   </link>
@@ -486,9 +492,9 @@
   <!-- Link right_finger -->
   <link name="right_finger">
     <inertial>
-      <origin xyz="0.0300924 -0.0120662 -0.00892773" rpy="0 0 0" />
-      <mass value="0.0317077" />
-      <inertia ixx="4.91577e-06" ixy="2.23814e-06" ixz="1.92923e-06" iyy="2.7337e-05" iyz="-5.1131e-08" izz="2.8555e-05" />
+      <origin xyz="0.0326334 -0.0118654 -0.00899796" rpy="0 0 0" />
+      <mass value="0.0336893" />
+      <inertia ixx="4.9385e-06" ixy="1.83943e-06" ixz="2.00808e-06" iyy="3.25894e-05" iyz="-3.8178e-08" izz="3.38228e-05" />
     </inertial>
     <!-- Part right_tip -->
     <visual>
@@ -572,6 +578,18 @@
         <mesh filename="../meshes/right_tip_00011.stl" />
       </geometry>
     </collision>
+    <collision>
+      <origin xyz="0 0.0125 0.008" rpy="0 -0 -1.5708" />
+      <geometry>
+        <mesh filename="../meshes/right_tip_00012.stl" />
+      </geometry>
+    </collision>
+    <collision>
+      <origin xyz="0 0.0125 0.008" rpy="0 -0 -1.5708" />
+      <geometry>
+        <mesh filename="../meshes/right_tip_00013.stl" />
+      </geometry>
+    </collision>
     <!-- Part right_finger_actuated -->
     <collision>
       <origin xyz="0.00258 -0.01357 -0.00489" rpy="0 -0 -1.5708" />
@@ -600,6 +618,26 @@
         <color rgba="0.2 0.2 0.2 1" />
       </material>
     </visual>
+    <!-- Part hex_nut_grade_a___b_m3x0_5_3 -->
+    <visual>
+      <origin xyz="0.032 -0.0083 -0.01" rpy="-1.5708 1.5708 0" />
+      <geometry>
+        <mesh filename="../meshes/hex_nut_grade_a___b_m3x0_5.stl" />
+      </geometry>
+      <material name="hex_nut_grade_a___b_m3x0_5_3_material">
+        <color rgba="0.603922 0.647059 0.686275 1" />
+      </material>
+    </visual>
+    <!-- Part hex_socket_countersunk_head_screw_m3x0_5_x_10_3 -->
+    <visual>
+      <origin xyz="0.032 -0.0175 -0.01" rpy="1.5708 1.5708 0" />
+      <geometry>
+        <mesh filename="../meshes/hex_socket_countersunk_head_screw_m3x0_5_x_10.stl" />
+      </geometry>
+      <material name="hex_socket_countersunk_head_screw_m3x0_5_x_10_3_material">
+        <color rgba="0.603922 0.647059 0.686275 1" />
+      </material>
+    </visual>
     <!-- Part hex_socket_head_cap_screw_m3x0_50_x_12 -->
     <visual>
       <origin xyz="0.00606218 0.0035 0" rpy="0 -0 -1.5708" />
@@ -610,13 +648,33 @@
         <color rgba="0.603922 0.647059 0.686275 1" />
       </material>
     </visual>
-    <!-- Part hex_socket_countersunk_head_screw_m3x0_5_x_8_7 -->
+    <!-- Part hex_socket_countersunk_head_screw_m3x0_5_x_10_4 -->
     <visual>
-      <origin xyz="0.032 -0.0175 -0.01" rpy="1.5708 -0 -0" />
+      <origin xyz="0.062 -0.0175 -0.01" rpy="1.5708 1.5708 0" />
       <geometry>
-        <mesh filename="../meshes/hex_socket_countersunk_head_screw_m3x0_5_x_8.stl" />
+        <mesh filename="../meshes/hex_socket_countersunk_head_screw_m3x0_5_x_10.stl" />
       </geometry>
-      <material name="hex_socket_countersunk_head_screw_m3x0_5_x_8_7_material">
+      <material name="hex_socket_countersunk_head_screw_m3x0_5_x_10_4_material">
+        <color rgba="0.603922 0.647059 0.686275 1" />
+      </material>
+    </visual>
+    <!-- Part right_nail -->
+    <visual>
+      <origin xyz="0 0.0125 0.008" rpy="0 -0 -1.5708" />
+      <geometry>
+        <mesh filename="../meshes/right_nail.stl" />
+      </geometry>
+      <material name="right_nail_material">
+        <color rgba="0.262745 0.282353 0.301961 1" />
+      </material>
+    </visual>
+    <!-- Part hex_nut_grade_a___b_m3x0_5_4 -->
+    <visual>
+      <origin xyz="0.062 -0.0083 -0.01" rpy="-1.5708 1.5708 0" />
+      <geometry>
+        <mesh filename="../meshes/hex_nut_grade_a___b_m3x0_5.stl" />
+      </geometry>
+      <material name="hex_nut_grade_a___b_m3x0_5_4_material">
         <color rgba="0.603922 0.647059 0.686275 1" />
       </material>
     </visual>
@@ -630,55 +688,9 @@
         <color rgba="0 0 0 1" />
       </material>
     </visual>
-    <collision>
-      <origin xyz="0 0.0125 0.008" rpy="0 -0 -1.5708" />
-      <geometry>
-        <mesh filename="../meshes/right_tip_grip_tape_00000.stl" />
-      </geometry>
-    </collision>
-    <collision>
-      <origin xyz="0 0.0125 0.008" rpy="0 -0 -1.5708" />
-      <geometry>
-        <mesh filename="../meshes/right_tip_grip_tape_00001.stl" />
-      </geometry>
-    </collision>
-    <collision>
-      <origin xyz="0 0.0125 0.008" rpy="0 -0 -1.5708" />
-      <geometry>
-        <mesh filename="../meshes/right_tip_grip_tape_00002.stl" />
-      </geometry>
-    </collision>
-    <collision>
-      <origin xyz="0 0.0125 0.008" rpy="0 -0 -1.5708" />
-      <geometry>
-        <mesh filename="../meshes/right_tip_grip_tape_00003.stl" />
-      </geometry>
-    </collision>
-    <collision>
-      <origin xyz="0 0.0125 0.008" rpy="0 -0 -1.5708" />
-      <geometry>
-        <mesh filename="../meshes/right_tip_grip_tape_00004.stl" />
-      </geometry>
-    </collision>
-    <collision>
-      <origin xyz="0 0.0125 0.008" rpy="0 -0 -1.5708" />
-      <geometry>
-        <mesh filename="../meshes/right_tip_grip_tape_00005.stl" />
-      </geometry>
-    </collision>
-    <!-- Part hex_socket_countersunk_head_screw_m3x0_5_x_8_8 -->
-    <visual>
-      <origin xyz="0.062 -0.0175 -0.01" rpy="1.5708 1.5708 0" />
-      <geometry>
-        <mesh filename="../meshes/hex_socket_countersunk_head_screw_m3x0_5_x_8.stl" />
-      </geometry>
-      <material name="hex_socket_countersunk_head_screw_m3x0_5_x_8_8_material">
-        <color rgba="0.603922 0.647059 0.686275 1" />
-      </material>
-    </visual>
     <!-- Part hex_socket_head_cap_screw_m3x0_50_x_12_2 -->
     <visual>
-      <origin xyz="-0.00606218 -0.0035 -0" rpy="0 -0 -1.5708" />
+      <origin xyz="0.0035 -0.00606218 0" rpy="0 -0 -3.14159" />
       <geometry>
         <mesh filename="../meshes/hex_socket_head_cap_screw_m3x0_50_x_12.stl" />
       </geometry>
@@ -688,7 +700,7 @@
     </visual>
     <!-- Part hex_socket_head_cap_screw_m3x0_50_x_12_3 -->
     <visual>
-      <origin xyz="0.0035 -0.00606218 -0" rpy="0 -0 -1.5708" />
+      <origin xyz="-0.0035 0.00606218 0" rpy="-0 -0 0" />
       <geometry>
         <mesh filename="../meshes/hex_socket_head_cap_screw_m3x0_50_x_12.stl" />
       </geometry>
@@ -698,7 +710,7 @@
     </visual>
     <!-- Part hex_socket_head_cap_screw_m3x0_50_x_12_4 -->
     <visual>
-      <origin xyz="-0.0035 0.00606218 -0" rpy="0 -0 -1.5708" />
+      <origin xyz="-0.00606218 -0.0035 0" rpy="0 -0 1.5708" />
       <geometry>
         <mesh filename="../meshes/hex_socket_head_cap_screw_m3x0_50_x_12.stl" />
       </geometry>

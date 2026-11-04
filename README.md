@@ -68,6 +68,7 @@ The scripts write all directories except `cad/`. Do not edit them. Change the in
 | `"mesh"` | the part mesh, cut into convex hulls `<part>_<index>` by [CoACD](https://github.com/SarahWeiii/CoACD) |
 | `"scad"` | the boxes and spheres in `cad/scad/<part>.scad` |
 | `"none"` | no collider |
+| `{"fuse": "<part>"}` | the part joins the mesh of `<part>` before CoACD cuts it |
 | `{"mirror": "<part>"}` | the CoACD hulls of `<part>`, mirrored across the yz plane of the part frame |
 
 MuJoCo collides a mesh as its convex hull, and a hull fills the profile of a fingertip. Thus CoACD cuts the tips into convex pieces.

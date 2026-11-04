@@ -19,8 +19,10 @@ dev = [
   "mujoco>=3.17",
   "numpy>=2.0",
   "onshape-to-robot>=1.8.0",
+  "pymeshlab>=2025.7",
   "pytest>=8.0",
   "ruff>=0.14",
+  "scipy>=1.15",  # trimesh computes the vertex normals of a fused tip with scipy.
   "trimesh>=4.0",
   "xacro>=2.0",
 ]
