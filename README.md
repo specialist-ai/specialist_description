@@ -75,9 +75,13 @@ MuJoCo collides a mesh as its convex hull, and a hull fills the profile of a fin
 
 Onshape triangulates the left and right tips differently, and CoACD cuts different meshes into different hulls. Thus CoACD cuts only the right tips, and the left tips use `mirror`.
 
+![Top view of the two fingertips. The CoACD hulls cover the tip, the nail and the grip tape, and stand up to 0.9 mm off the concave parts of the grip face.](docs/colliders.svg)
+
 Each geom in the MJCF has a unique name. A mesh geom has the name of its mesh, with an index if two geoms use the mesh. A primitive has the name `<body>_collider_<index>`. A primitive collides with the meshes but not with other primitives, because a primitive is larger than its part. The mesh colliders have `condim` 4, because only torsional friction stops a pinched object from turning.
 
 ## Generate
+
+![The onshape-to-robot app exports cad/robot.pkl and cad/assets/. onshape_to_urdf.py writes urdf/ and meshes/ from them and the inputs in cad/, and CoACD cuts the tips into convex hulls in this step. urdf_to_mjcf.py writes mjcf/ from the URDF and joint_properties.json, and urdf_to_xacro.py writes xacro/.](docs/pipeline.svg)
 
 1. Install the dependencies:
 
